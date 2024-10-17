@@ -1,183 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Zeyad Waleed</title>
-</head>
-<body>
-
-    <header>
-        <a href="#" class="logo">Zeyad Waleed </a>
-        <nav class="navigation">
-            <a href="#services">services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-
-    <section class="main">
-        <div>
-            <h2>Hello, I'm Zeyad<br><span>Software Developer</span></h2>
-            <h3>Code your way to success</h3>
-            <a href="#projects" class="main-btn">View my work</a>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/zeyad-waleed-340966263/"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.behance.net/zeyadwaleeed"><i class="fab fa-behance"></i></a>
-              <a href="https://github.com/zeyadW1"><i class="fab fa-github"></i></a>
-
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeyad Waleed Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Zeyad Waleed</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Zeyad Waleed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile.png" alt="zeyad profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Zeyad Waleed</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
     </section>
-
-    <section class="cards" id="services">
-    <h2 class="title">Services</h2>
-    <div class="content">
-        <div class="card">
-            <div class="icon">
-                <i class="fas fa-palette"></i>
-            </div>
-            <div class="info">
-                <h3>Graphic Design</h3>
-                <p>Create stunning visual designs for websites, social media, and other digital platforms</p>
-            </div>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fas fa-share-alt"></i>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
             </div>
-            <div class="info">
-                <h3>Social Media Design</h3>
-                <p>Design engaging and eye-catching content for social media platforms to boost engagement and brand awareness</p>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Zewail City of Science and Technology<br/>Bachelor’s, Computer Science</p>
             </div>
+          </div>
+          <div class="text-container">
+            <p>
+                <strong>Front-End Developer</strong> and <strong> Software Engineering student</strong> with a passion for building responsive, user-friendly web
+                applications. Experienced in creating efficient, scalable solutions using modern frameworks and best practices.
+                Proven ability to collaborate with cross-functional teams and deliver results that enhance user engagement.
+            </p>
+          </div>
         </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <div class="info">
-                <h3>Coding</h3>
-                <p>Develop clean, efficient, and reliable code for websites and web applications using the latest technologies</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="cs.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Coding</p>
-                    <strong class="project-title">
-                        <span>Web Development</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="sf.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Social Media Design</p>
-                    <strong class="project-title">
-                        <span>ZC SF</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="kher.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Graphic Design</p>
-                    <strong class="project-title">
-                        <span>Kher</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="SOC.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Social Media Design</p>
-                    <strong class="project-title">
-                        <span>SOC</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="zw.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Social Media Design</p>
-                    <strong class="project-title">
-                        <span>For Me </span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="cs.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Coding</p>
-                    <strong class="project-title">
-                        <span>Descktop Development </span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI/UX Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prototyping</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Product managment</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UX Research</h3>
+                  <p>Intermediate</p>
+                </div> 
+              </article>
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+201149836453</p>
-                </div>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creative Direction</h3>
+                  <p>Intermediate</p>
+                </div> 
+              </article>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>s-zeyad.nabil@zewailcity.edu.eg</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
-    <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Zeyad Waleed </span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AMAN APP</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dish Drop</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sportofolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://zeyadwaleed7.github.io/sportofolio/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">zeyadw768@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Zeyad Waleed. All Rights Reserved.</p>
     </footer>
-
-</body>
-</html>
+  </body>
+</html>-
