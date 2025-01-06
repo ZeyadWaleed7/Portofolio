@@ -7,35 +7,38 @@
     <title>Zeyad Waleed Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      function navigateToContact() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Zeyad Waleed</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Zeyad Waleed</div>
+        <ul class="nav-links"> 
+          <li><a class = "links" href="#about">About</a></li>
+          <li><a class = "links" href="#experience">Experience</a></li>
+          <li><a class = "links" href="#projects">Projects</a></li>
+          <li><a href="#contact" class="talk-btn" onclick="navigateToContact()">Let's talk</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-menu hidden">
+        <ul class="mobile-nav-links">
+          <li><a href="#about" onclick="toggleNavbar()">About</a></li>
+          <li><a href="#experience" onclick="toggleNavbar()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleNavbar()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleNavbar()">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Zeyad Waleed</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    
     <section id="profile">
       <div class="section__pic-container">
         <img src="profile.png" alt="zeyad profile picture" />
