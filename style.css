@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   padding-top: 74px;
+  background-color: #d9dbdf;
 }
 
 html {
@@ -28,9 +29,15 @@ a,
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #d9dbdf;
   z-index: 1000;
+}
+
+.container{
+  margin: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .navbar .container {
@@ -248,10 +255,16 @@ section {
   display: flex;
 }
 
-#profile {
+.profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
   height: 80vh;
 }
 
