@@ -34,7 +34,7 @@ a,
 }
 
 .container{
-  margin: 20px;
+  margin: 24px;
   background-color: white;
   border: 1px solid white;
   border-radius: 10px;
@@ -259,8 +259,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-top: 50px;
   background-color: white;
   border: 1px solid white;
@@ -322,7 +322,7 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 10px;
 }
 
 .btn-color-1,
@@ -394,8 +394,7 @@ section {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 20px;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -419,6 +418,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
@@ -458,9 +458,9 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 20px;
+  width: 95%;
+  height: 95%;
 }
 
 .project-title {
