@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(125, 125, 125);
 }
 
 
@@ -280,7 +280,7 @@ section {
   text-align: center;
 }
 
-.section__text p {
+.section__text {
   font-weight: 600;
 }
 
@@ -302,13 +302,50 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background-color: #363636;
+  width: 220px;
+  padding: 1rem;
+  border-radius: 14px;
+}
+.social:hover {
+  cursor: pointer;
+  background-color: #282828;
+}
+
+.social-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 40px;
+}
+.social-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.social-text {
+  color: rgb(222, 221, 221);
+  font-size: 18px;
+  margin: 0;
+}
+
+.social-p {
+  color: rgb(178, 178, 178);
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
 }
 
 .btn-container {
