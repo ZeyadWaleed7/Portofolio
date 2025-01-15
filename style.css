@@ -8,7 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   padding-top: 74px;
-  background-color: #d9dbdf;
+  background-color: black;
 }
 
 html {
@@ -29,14 +29,13 @@ a,
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #d9dbdf;
+  background-color: black;
   z-index: 1000;
 }
 
 .container{
   margin: 24px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -50,8 +49,9 @@ a,
 .talk-btn {
   background-color: black;
   color: white;
+  border: 0.5px solid white;
   padding: 10px 24px;
-  border-radius: 12px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -64,13 +64,14 @@ a,
 .navbar .logo {
   font-size: 28px;
   font-weight: 900;
-  color: #333333;
+  color: white;
 }
 
 .navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  
 }
 
 .th3{
@@ -80,7 +81,7 @@ a,
 .links{
   text-decoration: none;
   font-size: 1rem;
-  color: black;
+  color: white;
   transition: color 0.3s ease;
 }
 
@@ -151,7 +152,7 @@ a,
 
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -266,8 +267,8 @@ section {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 50px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
   height: 80vh;
 }
@@ -287,19 +288,17 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1 {
-  text-align: left;
-}
-
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 16px;
   margin-bottom: 1rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 70px;
   text-align: left;
+  color: white;
 }
 
 #socials-container {
@@ -402,8 +401,8 @@ section {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 50px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: black;
+  border: 1px solid black;
   border-radius: 20px;
   height: 80vh;
 }
@@ -416,8 +415,8 @@ section {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 50px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: black;
+  border: 1px solid black;
   border-radius: 20px;
   height: 110vh;
 }
@@ -430,8 +429,8 @@ section {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 50px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: black;
+  border: 1px solid black;
   border-radius: 20px;
   height: 80vh;
 }
@@ -540,13 +539,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
@@ -564,10 +556,12 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  color: white;
 }
 
 .contact-info-container p {
   font-size: larger;
+  color: white;
 }
 
 .contact-icon {
@@ -576,6 +570,7 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+  color:white;
 }
 
 footer {
