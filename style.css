@@ -296,15 +296,16 @@ section {
 }
 
 .title {
-  font-size: 70px;
+  font-size: 100px;
   text-align: left;
   color: white;
+  font-family: "DM Sans", serif;
 }
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 40px;
   gap: 2rem;
 }
 
@@ -312,7 +313,7 @@ section {
   display: flex;
   align-items: center;
   gap: 17px;
-  background-color: #363636;
+  background-color: #1a1a1a;
   width: 220px;
   padding: 1rem;
   border-radius: 14px;
