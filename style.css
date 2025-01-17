@@ -33,6 +33,16 @@ a,
   z-index: 1000;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+}
+
 .container{
   margin: 24px;
   background-color: black;
