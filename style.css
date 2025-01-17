@@ -345,6 +345,18 @@ section {
   margin: 0;
 }
 
+.experience-sub-title {
+  color: rgb(222, 221, 221);
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.experience-title{
+  color: rgb(222, 221, 221);
+  font-size: 28px;
+}
+
 .social-p {
   color: rgb(178, 178, 178);
   font-size: 12px;
@@ -466,7 +478,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #282828;
   border-radius: 20px;
   border-color: rgb(163, 163, 163);
   text-align: center;
@@ -481,16 +493,6 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-}
-
-
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  text-align: left;
-  margin-bottom: 2rem;
 }
 
 .experience-details-container {
@@ -520,8 +522,7 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: #282828;
 }
 
 .project-img {
