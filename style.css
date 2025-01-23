@@ -709,9 +709,9 @@ footer p {
     margin-right: 44px;
   }
 
-  .details-container {
-    width: 100%; 
-  }
+  /* .details-container {
+    width: 80%; 
+  } */
 
   .experience {
     height: auto;
@@ -745,9 +745,9 @@ footer p {
     align-items: center;
   }
 
-  .projects-container {
-    width: 100%;
-  }
+  /* .projects-container {
+    width: 80%;
+  } */
 
   .project-img {
     width: 100%;
