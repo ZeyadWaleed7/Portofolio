@@ -469,6 +469,14 @@ section {
   margin-top: 2rem;
 }
 
+.project-container{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
