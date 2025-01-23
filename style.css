@@ -628,19 +628,18 @@ footer p {
 }
 
 
-/* Media Query for Tablets and Smaller Screens (768px and below) */
+
 @media (max-width: 768px) {
-  /* Adjust Navbar */
   .navbar .nav-links {
-    display: none; /* Hide desktop nav links */
+    display: none; 
   }
 
   .navbar .hamburger {
-    display: flex; /* Show hamburger menu */
+    display: flex; 
   }
 
   .mobile-menu {
-    display: none; /* Hide mobile menu by default */
+    display: none; 
   }
 
   .mobile-menu.hidden {
@@ -653,7 +652,6 @@ footer p {
     padding: 1rem;
   }
 
-  /* Adjust Profile Section */
   .profile {
     height: auto;
     padding: 2rem 0;
@@ -666,7 +664,7 @@ footer p {
   }
 
   .title {
-    font-size: 48px; /* Reduce font size for smaller screens */
+    font-size: 48px;
     text-align: center;
   }
 
@@ -681,10 +679,9 @@ footer p {
   }
 
   .social {
-    width: 100%; /* Full width for social links */
+    width: 100%; 
   }
 
-  /* Adjust About Section */
   .about {
     height: auto;
     padding: 2rem 0;
@@ -713,10 +710,9 @@ footer p {
   }
 
   .details-container {
-    width: 100%; /* Full width for details containers */
+    width: 100%; 
   }
 
-  /* Adjust Experience Section */
   .experience {
     height: auto;
     padding: 2rem 0;
@@ -739,7 +735,6 @@ footer p {
     gap: 1rem;
   }
 
-  /* Adjust Projects Section */
   .projects {
     height: auto;
     padding: 2rem 0;
@@ -751,7 +746,7 @@ footer p {
   }
 
   .projects-container {
-    width: 100%; /* Full width for project containers */
+    width: 100%;
   }
 
   .project-img {
@@ -765,10 +760,9 @@ footer p {
   }
 
   .project-btn {
-    width: 100%; /* Full width for buttons */
+    width: 100%;
   }
 
-  /* Adjust Contact Section */
   .contact-info-upper-container {
     flex-direction: column;
     align-items: center;
@@ -781,11 +775,10 @@ footer p {
   }
 }
 
-/* Media Query for Mobile Devices (480px and below) */
+
 @media (max-width: 480px) {
-  /* Further Adjustments for Smaller Screens */
   .title {
-    font-size: 36px; /* Even smaller font size for mobile */
+    font-size: 36px;
   }
 
   .section__text__p2 {
@@ -798,14 +791,14 @@ footer p {
   }
 
   .project-title {
-    font-size: 24px; /* Smaller project titles */
+    font-size: 24px; 
   }
 
   .description {
-    font-size: 14px; /* Smaller project descriptions */
+    font-size: 14px;
   }
 
   .btn {
-    width: 100%; /* Full width for buttons */
+    width: 100%;
   }
 }
