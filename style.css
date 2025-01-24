@@ -474,7 +474,6 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -498,6 +497,71 @@ section {
   bottom: 2.5rem;
 }
 
+/* Projects Section - Horizontal Scroll */
+.projects-scroll-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of project cards */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #525252 black; /* For Firefox */
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.projects-scroll-container::-webkit-scrollbar-track {
+  background: black; /* Scrollbar track color */
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+  background: #525252; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Scrollbar thumb color on hover */
+}
+
+.project-container {
+  display: inline-flex; /* Display project cards in a row */
+  gap: 2rem; /* Space between cards */
+  padding: 1rem; /* Add some padding */
+}
+
+.project-img {
+  border-radius: 20px;
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 50vh; /* Limit image height */
+}
+
+.project-title {
+  color: rgb(222, 221, 221);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.description {
+  width: 100%; /* Full width for description */
+  margin-bottom: 20px;
+  text-align: left;
+  white-space: normal; /* Allow text wrapping */
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-btn {
+  width: auto;
+  padding: 0.5rem 1rem; 
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -508,8 +572,8 @@ section {
 }
 
 .projects-container {
-  padding: 1.5rem;
-  flex: 1;
+  width: 300px;
+  padding: 20px;
   background: #282828;
   border-radius: 20px;
   border-color: rgb(163, 163, 163);
