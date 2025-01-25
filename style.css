@@ -470,10 +470,10 @@ section {
 }
 
 .project-container{
-  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
+  gap: 20px;
 }
 
 .about-details-container {
@@ -524,9 +524,9 @@ section {
 }
 
 .project-container {
-  display: inline-flex; /* Display project cards in a row */
-  gap: 2rem; /* Space between cards */
-  padding: 1rem; /* Add some padding */
+  display: inline-flex;
+  gap: 20px; 
+  padding: 1rem; 
 }
 
 .project-img {
@@ -804,14 +804,13 @@ footer p {
     padding: 2rem 0;
   }
 
-  .project-container {
+  /* .project-container {
     flex-direction: column;
     align-items: center;
-  }
+  } */
   
   .projects-container{
     width: 70%;
-    margin-left: 44px;
   }
 
   .project-img {
