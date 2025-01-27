@@ -116,7 +116,6 @@ a,
   transition: transform 0.3s ease;
 }
 
-/* Mobile Menu */
 .mobile-menu {
   background-color: #ffffff;
   position: absolute;
@@ -150,7 +149,6 @@ a,
   color: #0077ff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar .nav-links {
     display: none;
@@ -368,8 +366,18 @@ section {
   color: rgb(222, 221, 221);
   font-size: 28px;
 }
-.skill-title{
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: 600;
   color: rgb(222, 221, 221);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  font-size: 1rem;
+  color: rgb(125, 125, 125);
+  text-align: center;
 }
 
 .social-p {
@@ -418,8 +426,6 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
-/* ABOUT SECTION */
 
 .about {
   display: flex;
@@ -497,30 +503,29 @@ section {
   bottom: 2.5rem;
 }
 
-/* Projects Section - Horizontal Scroll */
 .projects-scroll-container {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping of project cards */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #525252 black; /* For Firefox */
+  overflow-x: auto; 
+  white-space: nowrap; 
+  scrollbar-width: thin; 
+  scrollbar-color: #525252 black;
 }
 
 .projects-scroll-container::-webkit-scrollbar {
-  height: 8px; /* Scrollbar height */
+  height: 8px;
 }
 
 .projects-scroll-container::-webkit-scrollbar-track {
-  background: black; /* Scrollbar track color */
+  background: black;
 }
 
 .projects-scroll-container::-webkit-scrollbar-thumb {
-  background: #525252; /* Scrollbar thumb color */
+  background: #525252; 
   border-radius: 4px;
 }
 
 .projects-scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #777; /* Scrollbar thumb color on hover */
+  background: #777;
 }
 
 .project-container {
@@ -531,9 +536,9 @@ section {
 
 .project-img {
   border-radius: 20px;
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 50vh; /* Limit image height */
+  width: 100%;
+  height: auto; 
+  max-height: 50vh; 
 }
 
 .project-title {
@@ -545,10 +550,10 @@ section {
 }
 
 .description {
-  width: 100%; /* Full width for description */
+  width: 100%;
   margin-bottom: 20px;
   text-align: left;
-  white-space: normal; /* Allow text wrapping */
+  white-space: normal;
 }
 
 .btn-container {
@@ -600,18 +605,19 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 150px;
 }
 
 article .icon {
