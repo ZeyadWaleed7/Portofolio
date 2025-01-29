@@ -928,3 +928,10 @@ footer p {
   font-size: 1rem;
   margin: 0;
 }
+
+.section__text__p1{
+  text-align: center;
+}
+.title{
+  text-align: center;
+}
