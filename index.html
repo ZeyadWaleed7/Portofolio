@@ -16,7 +16,16 @@
       function navigateToContact() {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
       }
+      function scrollExperience(direction) {
+        const container = document.querySelector('.experience-container');
+        const scrollAmount = 350;
+        container.scrollBy({
+          left: direction * scrollAmount,
+          behavior: 'smooth' 
+        });
+      }
     </script>
+
   </head>
   <body>
     <nav class="navbar">
@@ -142,6 +151,7 @@
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-scroll-container">
+        <button class="scroll-arrow left-arrow" onclick="scrollExperience(-1)">&#10094;</button>
         <div class="experience-container">
           <div class="experience-item">
             <img src="assets/gameball-logo.png" alt="Gameball Logo" class="company-logo">
@@ -154,16 +164,17 @@
             <p>2024-2024</p>
           </div>
           <div class="experience-item">
-            <img src="assets/CIB-logo.png" alt="Aman Logo" class="company-logo">
+            <img src="assets/CIB-logo.png" alt="CIB Logo" class="company-logo">
             <p class="company-name">Intern<br>CIB Bank - Cairo</p>
             <p>2024-2024</p>
           </div>
           <div class="experience-item">
-            <img src="assets/INNOVA-logo.png" alt="Aman Logo" class="company-logo">
+            <img src="assets/INNOVA-logo.png" alt="INNOVA Logo" class="company-logo">
             <p class="company-name">UX Team lead<br>INNOVA - Cairo</p>
             <p>2023-2024</p>
           </div>
         </div>
+        <button class="scroll-arrow right-arrow" onclick="scrollExperience(1)">&#10095;</button>
       </div>
     </div>
 

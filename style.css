@@ -877,14 +877,13 @@ footer p {
   }
 }
 
-/* Add this to your existing CSS */
-
 .experience-scroll-container {
+  position: relative;
   width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: thin;
-  scrollbar-color: #525252 black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .experience-scroll-container::-webkit-scrollbar {
@@ -905,9 +904,48 @@ footer p {
 }
 
 .experience-container {
-  display: inline-flex;
+  display: flex;
   gap: 20px;
   padding: 1rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: calc(100% - 80px);
+}
+
+.section__text__p1{
+  text-align: center;
+}
+.title{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.scroll-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
 }
 
 .experience-item {
@@ -915,6 +953,7 @@ footer p {
   padding: 1rem;
   border-radius: 20px;
   width: 300px;
+  flex-shrink: 0; 
 }
 
 .company-logo {
@@ -927,11 +966,12 @@ footer p {
   font-size: 1rem;
   margin: 0;
 }
+@media (min-width: 1024px) {
+  .scroll-arrow {
+    display: none;
+  }
 
-.section__text__p1{
-  text-align: center;
-}
-.title{
-  text-align: center;
-  margin-bottom: 18px;
+  .experience-container {
+    width: 100%; 
+  }
 }
