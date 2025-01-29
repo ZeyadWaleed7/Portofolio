@@ -603,6 +603,10 @@ article p {
   flex-direction: column;
 }
 
+.experience-work-container{
+  background:#ff0000;
+}
+
 .article-container {
   display: flex;
   flex-wrap: wrap;
@@ -871,4 +875,56 @@ footer p {
   .btn {
     width: 100%;
   }
+}
+
+/* Add this to your existing CSS */
+
+.experience-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #525252 black;
+}
+
+.experience-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.experience-scroll-container::-webkit-scrollbar-track {
+  background: black;
+}
+
+.experience-scroll-container::-webkit-scrollbar-thumb {
+  background: #525252;
+  border-radius: 4px;
+}
+
+.experience-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.experience-container {
+  display: inline-flex;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.experience-item {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.company-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  color: rgb(222, 221, 221);
+  font-size: 1rem;
+  margin: 0;
 }
