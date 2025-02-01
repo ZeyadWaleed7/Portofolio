@@ -851,6 +851,19 @@ footer p {
 
 
 @media (max-width: 480px) {
+
+  .company-logo {
+    width: 170px;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+  
+  .company-p{
+    font-size: 12px;
+  }
+
   .title {
     font-size: 36px;
   }
@@ -906,7 +919,7 @@ footer p {
 .experience-container {
   display: flex;
   gap: 20px;
-  padding: 1rem;
+  padding-bottom: 1rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: calc(100% - 80px);
@@ -940,19 +953,10 @@ footer p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.left-arrow {
-  margin-right: 10px;
-}
-
-.right-arrow {
-  margin-left: 10px;
-}
-
 .experience-item {
   text-align: center;
   padding: 1rem;
   border-radius: 20px;
-  width: 300px;
   flex-shrink: 0; 
 }
 
@@ -969,6 +973,10 @@ footer p {
 @media (min-width: 1024px) {
   .scroll-arrow {
     display: none;
+  }
+  
+  .experience-item {
+    width: 320px;
   }
 
   .experience-container {
