@@ -983,3 +983,38 @@ footer p {
     width: 100%; 
   }
 }
+
+/* Bottom Navigation Menu */
+.bottom-nav {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid #333;
+  z-index: 1000;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: flex;
+  }
+}
