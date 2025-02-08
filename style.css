@@ -1028,6 +1028,87 @@ article p {
   margin-top: 5px;
 }
 
+ul {
+  list-style: none;
+}
+
+.example-1 {
+  display: flex;
+  margin-top: 36px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder; 
+  background-color: #1a1a1a;
+  border-radius: 30px; 
+  padding: 20px; 
+  height: 60px;
+  /* width: 300px; */
+}
+
+.example-1 .icon-content {
+  margin: 0 10px;
+  position: relative;
+  font-weight: bolder;
+}
+
+.example-1 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff; 
+  color: #000; 
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: bolder;
+}
+
+.example-1 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+
+.example-1 .icon-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.example-1 .icon-content .link:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-1 .icon-content .link svg {
+  width: 60px;
+  height: 60px;
+  fill: #fff;
+}
+
+
+.example-1 .icon-content .link[data-social="dribbble"]:hover {
+  color: #ea4c89;
+}
+
+.example-1 .icon-content .link[data-social="github"]:hover svg {
+  fill: #830e94;
+}
+
+.example-1 .icon-content .link[data-social="linkedin"]:hover svg {
+  fill: #0077b5;
+}
+
+
 @media (max-width: 768px) {
   .skill-logo {
     width: 68px;
@@ -1040,5 +1121,20 @@ article p {
 
   article p {
     font-size: 0.9rem;
+  }
+
+  .example-1 {
+    margin-top: 24px;
+    height: 30px;
+    width: 200px;
+  }
+  .example-1 .icon-content .link svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .example-1 {
+    gap:32px;
   }
 }
