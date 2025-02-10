@@ -810,19 +810,6 @@ footer p {
   font-size: 1rem;
   margin: 0;
 }
-@media (min-width: 1024px) {
-  .scroll-arrow {
-    display: none;
-  }
-  
-  .experience-item {
-    width: 320px;
-  }
-
-  .experience-container {
-    width: 100%; 
-  }
-}
 
 .bottom-nav {
   display: none;
@@ -1136,5 +1123,16 @@ ul {
 @media (min-width: 1024px) {
   .example-1 {
     gap:32px;
+  }
+  .scroll-arrow {
+    display: none;
+  }
+  
+  .experience-item {
+    width: 320px;
+  }
+
+  .experience-container {
+    width: 100%; 
   }
 }
