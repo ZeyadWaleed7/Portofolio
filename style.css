@@ -68,7 +68,10 @@ a,
 }
 
 .talk-btn:hover {
-  background-color: #525252;
+  background-color: #8fff00;
+  color: black;
+  border-color: #8fff00;
+
 }
 
 .navbar .logo {
@@ -96,10 +99,8 @@ a,
 }
 
 .links:hover {
-  color: grey;
-  text-decoration: underline;
+  color: #8fff00;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .navbar .hamburger {
@@ -1095,6 +1096,71 @@ ul {
   fill: #0077b5;
 }
 
+@media (min-width: 1024px) {
+  .example-1 {
+    gap:32px;
+  }
+  .scroll-arrow {
+    display: none;
+  }
+  
+  .experience-item {
+    width: 320px;
+  }
+
+  .experience-container {
+    width: 100%; 
+  }
+}
+
+.projects-wrapper {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; 
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 20px)); 
+  }
+}
+
+.projects-scroll-container {
+  display: flex;
+  animation: scrollProjects 30s linear infinite; 
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+
 
 @media (max-width: 768px) {
   .skill-logo {
@@ -1119,20 +1185,7 @@ ul {
     width: 30px;
     height: 30px;
   }
-}
-@media (min-width: 1024px) {
-  .example-1 {
-    gap:32px;
-  }
-  .scroll-arrow {
-    display: none;
-  }
-  
-  .experience-item {
-    width: 320px;
-  }
-
-  .experience-container {
-    width: 100%; 
+  .projects-wrapper {
+    width: 100%;
   }
 }
