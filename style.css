@@ -186,6 +186,12 @@ a {
   cursor: pointer;
 }
 
+.about-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -300,6 +306,13 @@ section {
 
 .title {
   font-size: 60px;
+  text-align: left;
+  color: white;
+  font-family: "DM Sans", serif;
+}
+
+.mega-title{
+  font-size: 100px;
   text-align: left;
   color: white;
   font-family: "DM Sans", serif;
@@ -478,6 +491,8 @@ article p {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .project-container{
@@ -490,12 +505,18 @@ article p {
 .about-details-container {
   justify-content: end;
   flex-direction: column;
-  
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
+  flex-direction: column;
+}
+
+.about-contain{
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
 }
 
 .about-pic {
@@ -600,6 +621,7 @@ article p {
 .experience-details-container {
   margin: 28px;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -612,23 +634,38 @@ article p {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
-  gap: 44px;
+  gap: 22px;
 }
 
 .skills-article-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color:#1a1a1a;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items:start;
-  background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.skill-article {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #0c0c0c;
+  height: 18px;
+  border: 2px solid #191919;
+}
+
+.skill-text {
+  font-size: 1.2rem;
+  color:#9d9d9d;
+  text-align: center;
 }
 
 article .icon {
@@ -1165,6 +1202,29 @@ ul {
 
 
 @media (max-width: 768px) {
+
+  .skill-article {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+    height: 18px;
+    border: 2px solid #191919;
+  }
+  
+  .article-container{
+    flex-direction: row;
+  }
+  
+  .experience-details-container {
+    margin: 18px;
+  } 
+
+
+  .skill-text {
+    font-size: 14px;
+    color:#9d9d9d;
+    text-align: center;
+  }
 
   .navbar .container{
     padding: 14px 14px;
