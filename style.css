@@ -47,22 +47,22 @@ a,
 }
 
 .container{
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 48px;
 }
 
 .talk-btn {
   background-color: black;
   color: white;
   border: 0.5px solid white;
-  padding: 8px 14px;
+  padding: 8px 22px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
@@ -332,9 +332,13 @@ section {
   gap: 8px;
 }
 
+.title-about{
+  font-size: 32px;
+  color: rgb(222, 221, 221);
+}
+
 .icon {
-  cursor: pointer;
-  height: 40px;
+  height: 60px;
 }
 .social-content {
   display: flex;
@@ -484,7 +488,7 @@ article p {
 }
 
 .about-details-container {
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
   
 }
@@ -569,12 +573,8 @@ article p {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding-top: 16px;
   flex: 1;
-  background: #1a1a1a;
-  border-radius: 20px;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
 }
 
 .projects-container {
@@ -613,6 +613,13 @@ article p {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   gap: 44px;
+}
+
+.skills-article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#1a1a1a;
 }
 
 article {
