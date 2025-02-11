@@ -29,8 +29,11 @@ a,
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -39,29 +42,28 @@ a,
 }
 
 .logo-img {
-  height: 45px;
+  height: 38px;
   width: auto;
 }
 
 .container{
-  margin: 24px;
-  background-color: black;
-  border-radius: 10px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 .talk-btn {
   background-color: black;
   color: white;
   border: 0.5px solid white;
-  padding: 10px 24px;
-  border-radius: 5px;
+  padding: 8px 14px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -81,9 +83,10 @@ a,
 }
 
 .navbar .nav-links {
+  margin-left: 48px;
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 38px;
   
 }
 
@@ -93,8 +96,8 @@ a,
 
 .links{
   text-decoration: none;
-  font-size: 1rem;
-  color: white;
+  font-size: 15px;
+  color: rgb(203, 203, 203);
   transition: color 0.3s ease;
 }
 
@@ -1155,6 +1158,14 @@ ul {
 
 
 @media (max-width: 768px) {
+
+  .navbar .container{
+    padding: 14px 14px;
+  }
+  .talk-btn{
+    display: none;
+  }
+
   .project-title {
     margin-bottom: 4px;
     font-size: 18px; 
