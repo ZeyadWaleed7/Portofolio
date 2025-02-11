@@ -1203,6 +1203,10 @@ ul {
 
 @media (max-width: 768px) {
 
+  .mega-title{
+    font-size: 44px;
+  }
+
   .skill-article {
     padding: 8px;
     border-radius: 10px;
