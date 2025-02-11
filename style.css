@@ -353,13 +353,20 @@ section {
   margin-bottom: 2rem;
 }
 
+.experience-logo{
+  gap: 8px;
+  display: flex; 
+  align-items: center; 
+  flex-direction: column;
+}
+
 .experience-title{
   color: rgb(222, 221, 221);
   font-size: 28px;
 }
+
 .skill-title {
   font-size: 1.2rem;
-  font-weight: 600;
   color: rgb(222, 221, 221);
   text-align: center;
   margin-bottom: 0.5rem;
@@ -601,8 +608,8 @@ article p {
 .article-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5rem;
+  /* justify-content: space-between; */
+  gap: 44px;
 }
 
 article {
@@ -986,8 +993,8 @@ footer p {
 }
 
 .skill-logo {
-  width: 68px;
-  height: 68px;
+  width: 75px;
+  height: 75px;
   margin-right: 10px;
   vertical-align: middle; 
 }
