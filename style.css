@@ -272,8 +272,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-left: 24px;
+  margin-left: 120px;
   margin-right: 24px;
   margin-top: 50px;
   background-color: black;
@@ -298,9 +297,10 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 1rem;
-  text-align: center;
+  margin-top: 8px;
+  text-align: start;
   font-weight: 400;
 }
 
@@ -312,7 +312,7 @@ section {
 }
 
 .mega-title{
-  font-size: 100px;
+  font-size: 90px;
   text-align: left;
   color: white;
   font-family: "DM Sans", serif;
@@ -616,6 +616,13 @@ article p {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.main-pic-container{
+  height: 450px;
+  width: 450px;
+  display: flex;
+  margin: auto 44px;
 }
 
 .experience-details-container {
@@ -1062,14 +1069,10 @@ ul {
 .example-1 {
   display: flex;
   margin-top: 36px;
-  justify-content: center;
   align-items: center;
-  font-weight: bolder; 
-  background-color: #1a1a1a;
   border-radius: 30px; 
-  padding: 20px; 
   height: 60px;
-  /* width: 300px; */
+  width: 300px;
 }
 
 .example-1 .icon-content {
@@ -1117,11 +1120,16 @@ ul {
 }
 
 .example-1 .icon-content .link svg {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   fill: #fff;
 }
 
+.main-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .example-1 .icon-content .link[data-social="dribbble"]:hover {
   color: #ea4c89;
@@ -1137,7 +1145,7 @@ ul {
 
 @media (min-width: 1024px) {
   .example-1 {
-    gap:32px;
+    gap:24px;
   }
   .scroll-arrow {
     display: none;
@@ -1270,5 +1278,8 @@ ul {
   }
   .projects-wrapper {
     width: 100%;
+  }
+  .main-pic-container{
+    display: none;
   }
 }
