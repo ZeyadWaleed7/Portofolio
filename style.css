@@ -599,12 +599,13 @@ article p {
 }
 
 .projects-container {
+  background: #0c0c0c;
   width: 300px;
   padding: 20px;
-  background:#1a1a1a;
   border-radius: 20px;
-  border-color: rgb(163, 163, 163);
+  border: 2px solid #191919;
   text-align: center;
+  
 }
 
 .section-container {
@@ -679,10 +680,6 @@ article .icon {
   cursor: default;
 }
 
-.color-container {
-  background: #282828;
-}
-
 .project-img {
   border-radius: 20px;
   width: 300px;
@@ -701,7 +698,7 @@ article .icon {
 .project-btn {
   width: 100%;
   color: white;
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(52, 52, 52);
 }
 
 .contact-info-upper-container {
