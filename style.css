@@ -641,7 +641,7 @@ article p {
 .article-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: center;
   gap: 22px;
 }
 
@@ -666,14 +666,22 @@ article {
   padding: 16px;
   border-radius: 10px;
   background-color: #0c0c0c;
-  height: 18px;
+  height: auto;
   border: 2px solid #191919;
+}
+
+.experience-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row; 
 }
 
 .skill-text {
   font-size: 1.2rem;
   color:#9d9d9d;
   text-align: center;
+  margin: 0;
 }
 
 article .icon {
@@ -1039,10 +1047,9 @@ footer p {
 }
 
 .skill-logo {
-  width: 75px;
-  height: 75px;
-  margin-right: 10px;
-  vertical-align: middle; 
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
 }
 
 .skill-title {
@@ -1250,8 +1257,8 @@ ul {
   }
 
   .skill-logo {
-    width: 68px;
-    height: 68px;
+    width: 20px;
+    height: 20px;
   }
 
   .skill-title {
