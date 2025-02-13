@@ -1279,4 +1279,17 @@ ul {
   .main-pic-container{
     display: none;
   }
+  .about-contain{
+    flex-direction: column;
+  }
+  .title-about{
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .text-container{
+    text-align: left;
+  }
+  .details-container{
+    text-align: left;
+  }
 }
