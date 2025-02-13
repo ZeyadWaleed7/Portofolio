@@ -813,10 +813,6 @@ footer p {
   scroll-behavior: smooth;
   width: calc(100% - 80px);
 }
-
-.section__text__p1{
-  text-align: center;
-}
 .title{
   text-align: center;
   margin-bottom: 18px;
@@ -927,7 +923,6 @@ footer p {
 
   .profile {
     height: auto;
-    padding: 2rem 0;
   }
 
   .main-profile-container {
@@ -1141,6 +1136,9 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .mobile-main-pic-container{
+    display: none;
+  }
   .example-1 {
     gap:24px;
   }
@@ -1291,5 +1289,18 @@ ul {
   }
   .details-container{
     text-align: left;
+  }
+  .profile{
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  .main-header{
+    justify-content: center;
+  }
+  .section__text__p2{
+    text-align: center;
+  }
+  .profile{
+    margin-top: 24px;
   }
 }
