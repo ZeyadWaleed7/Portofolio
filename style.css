@@ -392,6 +392,8 @@ section {
   margin-bottom: 0.5rem;
 }
 
+
+
 article p {
   font-size: 1rem;
   color: rgb(125, 125, 125);
@@ -669,6 +671,15 @@ article {
   height: auto;
   border: 2px solid #191919;
 }
+.warning-article {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #ffcc0033;
+  height: 24px;
+}
 
 .experience-logo {
   display: flex;
@@ -680,6 +691,12 @@ article {
 .skill-text {
   font-size: 1.2rem;
   color:#9d9d9d;
+  text-align: center;
+  margin: 0;
+}
+.warning-text{
+  font-size: 14px;
+  color:#ffcc00;
   text-align: center;
   margin: 0;
 }
@@ -1052,6 +1069,12 @@ footer p {
   margin-right: 8px;
 }
 
+.warning-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
 .skill-title {
   display: inline-block;
   margin: 0;
@@ -1309,5 +1332,53 @@ ul {
   }
   .section__text__p2{
     text-align: center;
+  }
+}
+
+.project-categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.category-btn {
+  background: none;
+  border: none;
+  color: #9d9d9d;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.category-btn:hover {
+  color: white;
+}
+
+.category-btn.active {
+  color: #8fff00;
+}
+
+.category-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #8fff00;
+}
+@media (max-width: 768px) {
+  .project-categories {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  
+  .category-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
   }
 }
