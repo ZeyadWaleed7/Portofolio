@@ -1253,7 +1253,7 @@ ul {
   }
   
   .experience-details-container {
-    margin: 18px;
+    margin: 24px;
   } 
 
 
@@ -1370,13 +1370,27 @@ ul {
   height: 2px;
   background-color: #8fff00;
 }
+
 @media (max-width: 768px) {
+  .skill-logo{
+    margin-right: 0px;
+  }
+  .about-containers {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .warning-article{
+    display: none;
+  }
   .project-categories {
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 0 1rem;
   }
   
+  .project-categories{
+    gap:6px;
+  }
+
   .category-btn {
     font-size: 0.9rem;
     padding: 0.3rem 0.8rem;
