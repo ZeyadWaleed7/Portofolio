@@ -12,42 +12,7 @@
     <title>Zeyad Waleed</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script>
-
-function updateCategoryText() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      document.querySelectorAll(".category-btn").forEach(button => {
-        if (button.textContent.trim() === "Web Development") {
-          button.textContent = "WebDev";
-        } else if (button.textContent.trim() === "App Development") {
-          button.textContent = "AppDev";
-        }
-      });
-    } else {
-      document.querySelectorAll(".category-btn").forEach(button => {
-        if (button.textContent.trim() === "WebDev") {
-          button.textContent = "Web Development";
-        } else if (button.textContent.trim() === "AppDev") {
-          button.textContent = "App Development";
-        }
-      });
-    }
-  }
-  updateCategoryText();
-  window.addEventListener("resize", updateCategoryText);
-      function navigateToContact() {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-      }
-      function scrollExperience(direction) {
-        const container = document.querySelector('.experience-container');
-        const scrollAmount = 260;
-        container.scrollBy({
-          left: direction * scrollAmount,
-          behavior: 'smooth' 
-        });
-      }
-    </script>
-
+    <script src="script.js"></script>
   </head>
   <body>
     <nav class="navbar">
