@@ -46,7 +46,7 @@ a,
   width: auto;
 }
 
-.container{
+.container {
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -87,14 +87,14 @@ a,
   list-style: none;
   display: flex;
   gap: 38px;
-  
+
 }
 
-.th3{
+.th3 {
   font-size: 28px;
 }
 
-.links{
+.links {
   text-decoration: none;
   font-size: 15px;
   color: rgb(203, 203, 203);
@@ -161,7 +161,7 @@ a {
 
 .logo {
   font-size: 28px;
-  font-weight: 800 ;
+  font-weight: 800;
 }
 
 .logo:hover {
@@ -186,7 +186,7 @@ a {
   cursor: pointer;
 }
 
-.about-container{
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,10 +264,12 @@ section {
   margin: 28px;
   display: flex;
 }
-.main-profile-container{
+
+.main-profile-container {
   display: flex;
   flex-direction: row;
 }
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -311,7 +313,7 @@ section {
   font-family: "DM Sans", serif;
 }
 
-.mega-title{
+.mega-title {
   font-size: 90px;
   text-align: left;
   color: white;
@@ -334,6 +336,7 @@ section {
   padding: 1rem;
   border-radius: 14px;
 }
+
 .social:hover {
   cursor: pointer;
   background-color: #282828;
@@ -345,7 +348,7 @@ section {
   gap: 8px;
 }
 
-.title-about{
+.title-about {
   font-size: 32px;
   color: rgb(222, 221, 221);
 }
@@ -353,6 +356,7 @@ section {
 .icon {
   height: 80px;
 }
+
 .social-content {
   display: flex;
   flex-direction: column;
@@ -373,14 +377,14 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-logo{
+.experience-logo {
   gap: 8px;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
-.experience-title{
+.experience-title {
   color: rgb(222, 221, 221);
   font-size: 28px;
 }
@@ -461,7 +465,7 @@ article p {
   height: 80vh;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -475,7 +479,7 @@ article p {
   height: 110vh;
 }
 
-.experience{
+.experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,7 +501,7 @@ article p {
   margin-right: 60px;
 }
 
-.project-container{
+.project-container {
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
@@ -515,7 +519,7 @@ article p {
   flex-direction: column;
 }
 
-.about-contain{
+.about-contain {
   display: flex;
   flex-direction: row;
   margin-top: 18px;
@@ -533,9 +537,9 @@ article p {
 
 .projects-scroll-container {
   width: 100%;
-  overflow-x: auto; 
-  white-space: nowrap; 
-  scrollbar-width: thin; 
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
   scrollbar-color: #525252 black;
 }
 
@@ -548,7 +552,7 @@ article p {
 }
 
 .projects-scroll-container::-webkit-scrollbar-thumb {
-  background: #525252; 
+  background: #525252;
   border-radius: 4px;
 }
 
@@ -558,15 +562,15 @@ article p {
 
 .project-container {
   display: inline-flex;
-  gap: 20px; 
-  padding: 1rem; 
+  gap: 20px;
+  padding: 1rem;
 }
 
 .project-img {
   border-radius: 20px;
   width: 100%;
-  height: auto; 
-  max-height: 50vh; 
+  height: auto;
+  max-height: 50vh;
 }
 
 .project-title {
@@ -592,7 +596,7 @@ article p {
 
 .project-btn {
   width: auto;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
 }
 
 .details-container {
@@ -607,7 +611,7 @@ article p {
   border-radius: 20px;
   border: 2px solid #191919;
   text-align: center;
-  
+
 }
 
 .section-container {
@@ -621,7 +625,7 @@ article p {
   margin: auto 0;
 }
 
-.main-pic-container{
+.main-pic-container {
   height: 450px;
   width: 450px;
   display: flex;
@@ -636,8 +640,8 @@ article p {
   flex-direction: column;
 }
 
-.experience-work-container{
-  background:#ff0000;
+.experience-work-container {
+  background: #ff0000;
 }
 
 .article-container {
@@ -656,14 +660,14 @@ article p {
 article {
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
   padding: 1rem;
   border-radius: 10px;
 }
 
 .skill-article {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   padding: 10px;
   border-radius: 10px;
@@ -671,9 +675,10 @@ article {
   height: auto;
   border: 2px solid #191919;
 }
+
 .warning-article {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   padding: 6px;
   border-radius: 10px;
@@ -685,18 +690,19 @@ article {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .skill-text {
   font-size: 1.2rem;
-  color:#9d9d9d;
+  color: #9d9d9d;
   text-align: center;
   margin: 0;
 }
-.warning-text{
+
+.warning-text {
   font-size: 14px;
-  color:#ffcc00;
+  color: #ffcc00;
   text-align: center;
   margin: 0;
 }
@@ -757,7 +763,7 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
-  color:white;
+  color: white;
 }
 
 footer {
@@ -768,7 +774,7 @@ footer p {
   text-align: center;
 }
 
-.description{
+.description {
   margin-bottom: 20px;
   text-align: left;
 }
@@ -782,8 +788,8 @@ footer p {
   .company-name {
     font-size: 14px;
   }
-  
-  .company-p{
+
+  .company-p {
     font-size: 12px;
   }
 
@@ -799,6 +805,7 @@ footer p {
     width: 150px;
     height: 150px;
   }
+
   .btn {
     width: 100%;
   }
@@ -838,7 +845,8 @@ footer p {
   scroll-behavior: smooth;
   width: calc(100% - 80px);
 }
-.title{
+
+.title {
   text-align: center;
   margin-bottom: 18px;
 }
@@ -867,7 +875,7 @@ footer p {
   text-align: center;
   padding: 1rem;
   border-radius: 20px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .company-logo {
@@ -919,21 +927,24 @@ footer p {
   .bottom-nav {
     display: flex;
   }
-  .container{
+
+  .container {
     margin: 0px;
     border-radius: 0px;
-    
+
   }
+
   .navbar .container {
     justify-content: center;
     align-items: center;
   }
 
   .navbar .nav-links {
-    display: none; 
+    display: none;
   }
+
   .mobile-menu {
-    display: none; 
+    display: none;
   }
 
   .mobile-menu.hidden {
@@ -972,7 +983,7 @@ footer p {
   }
 
   .social {
-    width: 100%; 
+    width: 100%;
   }
 
   .about {
@@ -990,7 +1001,7 @@ footer p {
     width: 200px;
     height: 200px;
   }
-  
+
   .section__pic-container {
     display: none;
   }
@@ -1003,7 +1014,7 @@ footer p {
   }
 
   .details-container {
-    width: 100%; 
+    width: 100%;
   }
 
   .experience {
@@ -1015,7 +1026,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     margin-left: 24px;
-    margin-right:68px;
+    margin-right: 68px;
   }
 
   .experience-details-container {
@@ -1033,7 +1044,7 @@ footer p {
     padding: 2rem 0;
   }
 
-  .projects-container{
+  .projects-container {
     width: 230px;
   }
 
@@ -1092,7 +1103,7 @@ ul {
   display: flex;
   margin-top: 36px;
   align-items: center;
-  border-radius: 30px; 
+  border-radius: 30px;
   height: 60px;
   width: 300px;
 }
@@ -1108,8 +1119,8 @@ ul {
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #fff; 
-  color: #000; 
+  background-color: #fff;
+  color: #000;
   padding: 6px 10px;
   border-radius: 5px;
   opacity: 0;
@@ -1147,7 +1158,7 @@ ul {
   fill: #fff;
 }
 
-.main-header{
+.main-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1166,22 +1177,24 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .mobile-main-pic-container{
+  .mobile-main-pic-container {
     display: none;
   }
+
   .example-1 {
-    gap:24px;
+    gap: 24px;
   }
+
   .scroll-arrow {
     display: none;
   }
-  
+
   .experience-item {
     width: 320px;
   }
 
   .experience-container {
-    width: 100%; 
+    width: 100%;
   }
 }
 
@@ -1196,7 +1209,7 @@ ul {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100px; 
+  width: 100px;
   z-index: 1;
   pointer-events: none;
 }
@@ -1215,14 +1228,15 @@ ul {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(calc(-100% - 20px)); 
+    transform: translateX(calc(-100% - 20px));
   }
 }
 
 .projects-scroll-container {
   display: flex;
-  animation: scrollProjects 30s linear infinite; 
+  animation: scrollProjects 30s linear infinite;
 }
 
 .project-container {
@@ -1236,7 +1250,7 @@ ul {
 
 @media (max-width: 768px) {
 
-  .mega-title{
+  .mega-title {
     font-size: 44px;
   }
 
@@ -1247,35 +1261,36 @@ ul {
     height: 18px;
     border: 2px solid #191919;
   }
-  
-  .article-container{
+
+  .article-container {
     flex-direction: row;
   }
-  
+
   .experience-details-container {
     margin: 24px;
-  } 
+  }
 
 
   .skill-text {
     font-size: 14px;
-    color:#9d9d9d;
+    color: #9d9d9d;
     text-align: center;
   }
 
-  .navbar .container{
+  .navbar .container {
     padding: 14px 14px;
   }
-  .talk-btn{
+
+  .talk-btn {
     display: none;
   }
 
   .project-title {
     margin-bottom: 4px;
-    font-size: 18px; 
+    font-size: 18px;
   }
 
-  .description{
+  .description {
     font-size: 12px;
   }
 
@@ -1298,39 +1313,49 @@ ul {
     width: 100%;
     justify-content: center;
   }
+
   .example-1 .icon-content .link svg {
     width: 30px;
     height: 30px;
   }
+
   .projects-wrapper {
     width: 100%;
   }
-  .main-pic-container{
+
+  .main-pic-container {
     display: none;
   }
-  .about-contain{
+
+  .about-contain {
     flex-direction: column;
   }
-  .title-about{
+
+  .title-about {
     font-size: 22px;
     margin-bottom: 8px;
   }
-  .text-container{
+
+  .text-container {
     text-align: left;
   }
-  .details-container{
+
+  .details-container {
     text-align: left;
   }
-  .profile{
+
+  .profile {
     margin-right: 24px;
     margin-left: 24px;
     margin-bottom: 24px;
     margin-top: 60px;
   }
-  .main-header{
+
+  .main-header {
     justify-content: center;
   }
-  .section__text__p2{
+
+  .section__text__p2 {
     text-align: center;
   }
 }
@@ -1372,23 +1397,26 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .skill-logo{
+  .skill-logo {
     margin-right: 0px;
   }
+
   .about-containers {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .warning-article{
+
+  .warning-article {
     display: none;
   }
+
   .project-categories {
     gap: 1rem;
     flex-wrap: wrap;
   }
-  
-  .project-categories{
-    gap:6px;
+
+  .project-categories {
+    gap: 6px;
   }
 
   .category-btn {
@@ -1487,7 +1515,7 @@ ul {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .footer {
     padding: 3rem 1.5rem 1.5rem;
   }

@@ -1,0 +1,12 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Personal portfolio website",
+    "main": "index.js",
+    "scripts": {
+        "optimize-images": "node optimize-images.js"
+    },
+    "dependencies": {
+        "sharp": "^0.32.1"
+    }
+}
