@@ -250,23 +250,15 @@
   <div id="projects" class="projects">
     <h1 class="title">Projects</h1>
     <div class="project-categories">
-      <button class="category-btn active">All</button>
-      <button class="category-btn">UI/UX</button>
-      <button class="category-btn">Web Development</button>
-      <button class="category-btn">App Development</button>
-      <div class="warning-article">
-        <div class="experience-logo">
-          <img src="assets/warning-icon.png" alt="HTML Logo" class="warning-logo">
-          <p class="warning-text">categories will be working soon</p>
-        </div>
-      </div>
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="ui-ux">UI/UX</button>
+      <button class="category-btn" data-category="web">Web Development</button>
     </div>
     <div class="projects-wrapper">
       <div class="fade-left"></div>
       <div class="projects-scroll-container">
         <div class="project-container">
-
-          <div class="projects-container color-container">
+          <div class="projects-container color-container" data-category="web">
             <div class="article-container">
               <img src="assets/project-1.png" alt="Project 1" class="project-img" />
             </div>
@@ -281,7 +273,7 @@
             </div>
           </div>
 
-          <div class="projects-container color-container">
+          <div class="projects-container color-container" data-category="web">
             <div class="article-container">
               <img src="assets/project-2.png" alt="Project 2" class="project-img" />
             </div>
@@ -296,7 +288,7 @@
             </div>
           </div>
 
-          <div class="projects-container color-container">
+          <div class="projects-container color-container" data-category="web">
             <div class="article-container">
               <img src="assets/project-3.png" alt="Project 3" class="project-img" />
             </div>
@@ -310,7 +302,8 @@
               </button>
             </div>
           </div>
-          <div class="projects-container color-container">
+
+          <div class="projects-container color-container" data-category="web">
             <div class="article-container">
               <img src="assets/project-4.png" alt="Project 4" class="project-img" />
             </div>
@@ -325,7 +318,7 @@
             </div>
           </div>
 
-          <div class="projects-container color-container">
+          <div class="projects-container color-container" data-category="web">
             <div class="article-container">
               <img src="assets/project-5.png" alt="Project 5" class="project-img" />
             </div>
@@ -339,7 +332,6 @@
               </button>
             </div>
           </div>
-
         </div>
       </div>
       <div class="fade-right"></div>
