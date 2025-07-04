@@ -70,9 +70,9 @@ a,
 }
 
 .talk-btn:hover {
-  background-color: #8fff00;
+  background-color: #ff5c17;
   color: black;
-  border-color: #8fff00;
+  border-color: #ff5c17;
 
 }
 
@@ -102,7 +102,7 @@ a,
 }
 
 .links:hover {
-  color: #8fff00;
+  color: #ff5c17;
   text-underline-offset: 1rem;
 }
 
@@ -1383,7 +1383,7 @@ ul {
 }
 
 .category-btn.active {
-  color: #8fff00;
+  color: #ff5c17;
 }
 
 .category-btn.active::after {
@@ -1393,7 +1393,7 @@ ul {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #8fff00;
+  background-color: #ff5c17;
 }
 
 @media (max-width: 768px) {
@@ -1453,7 +1453,7 @@ ul {
 }
 
 .footer-email {
-  color: #8fff00;
+  color: #ff5c17;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1484,7 +1484,7 @@ ul {
 }
 
 .footer-links a:hover {
-  color: #8fff00;
+  color: #ff5c17;
 }
 
 .footer-socials {
