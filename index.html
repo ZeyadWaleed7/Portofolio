@@ -22,16 +22,15 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="mobile-styles.css" />
 
   <title>Zeyad Waleed</title>
 </head>
 
-<body>
-  <nav class="navbar">
+<body>  <nav class="navbar">
     <div class="container">
       <div class="logo">
         <img src="assets/logo.png" alt="Logo" class="logo-img">
@@ -43,9 +42,13 @@
         <li><a class="links" href="#projects">Projects</a></li>
       </ul>
       <div><a href="#contact" class="talk-btn" onclick="navigateToContact()">Let's talk</a></div>
-
+      <button class="hamburger-btn" id="hamburger-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
-    <div class="mobile-menu hidden">
+    <div class="mobile-menu hidden" id="mobile-menu">
       <ul class="mobile-nav-links">
         <li><a href="#about" onclick="toggleNavbar()">About</a></li>
         <li><a href="#experience" onclick="toggleNavbar()">Experience</a></li>
@@ -127,31 +130,38 @@
       </div>
     </div>
   </div>
-
   <div id="experience" class="experience">
     <h1 class="title">Experience</h1>
     <div class="experience-scroll-container">
       <button class="scroll-arrow left-arrow" onclick="scrollExperience(-1)">&#10094;</button>
       <div class="experience-container">
-        <div class="experience-item">
-          <img src="assets/gameball-logo.png" alt="Gameball Logo" class="company-logo">
-          <p class="company-name">Front-End Intern<br>Gameball - Cairo</p>
-          <p class="company-p">2025-Present</p>
+        <div class="experience-item exp-card">
+          <div class="article-container">
+            <img src="assets/gameball-logo.png" alt="Gameball Logo" class="company-logo">
+          </div>
+          <p class="exp-title">Front-End Intern</p>
+          <p class="exp-description">Gameball - Cairo<br>2025-Present</p>
         </div>
-        <div class="experience-item">
-          <img src="assets/aman-logo.png" alt="Aman Logo" class="company-logo">
-          <p class="company-name">UX Designer Intern<br>AMAN Holding - Cairo</p>
-          <p class="company-p">2024-2024</p>
+        <div class="experience-item exp-card">
+          <div class="article-container">
+            <img src="assets/aman-logo.png" alt="Aman Logo" class="company-logo">
+          </div>
+          <p class="exp-title">UX Designer Intern</p>
+          <p class="exp-description">AMAN Holding - Cairo<br>2024-2024</p>
         </div>
-        <div class="experience-item">
-          <img src="assets/CIB-logo.png" alt="CIB Logo" class="company-logo">
-          <p class="company-name">Intern<br>CIB Bank - Cairo</p>
-          <p class="company-p">2024-2024</p>
+        <div class="experience-item exp-card">
+          <div class="article-container">
+            <img src="assets/CIB-logo.png" alt="CIB Logo" class="company-logo">
+          </div>
+          <p class="exp-title">Intern</p>
+          <p class="exp-description">CIB Bank - Cairo<br>2024-2024</p>
         </div>
-        <div class="experience-item">
-          <img src="assets/INNOVA-logo.png" alt="INNOVA Logo" class="company-logo">
-          <p class="company-name">UX Team lead<br>INNOVA - Cairo</p>
-          <p>2023-2024</p>
+        <div class="experience-item exp-card">
+          <div class="article-container">
+            <img src="assets/INNOVA-logo.png" alt="INNOVA Logo" class="company-logo">
+          </div>
+          <p class="exp-title">UX Team lead</p>
+          <p class="exp-description">INNOVA - Cairo<br>2023-2024</p>
         </div>
       </div>
       <button class="scroll-arrow right-arrow" onclick="scrollExperience(1)">&#10095;</button>
@@ -326,7 +336,6 @@
       <div class="fade-right"></div>
     </div>
   </div>
-
   <div id="contact" class="about">
     <h1 class="title">Keep In Touch</h1>
     <div class="contact-info-upper-container">
@@ -335,21 +344,6 @@
         <p><a href="mailto:examplemail@gmail.com">zeyadw768@gmail.com</a></p>
       </div>
     </div>
-  </div>
-
-  <div class="bottom-nav">
-    <a href="#about" class="nav-item">
-      <img src="assets/home-icon.png" alt="Home" class="nav-icon">
-      <span>Home</span>
-    </a>
-    <a href="#projects" class="nav-item">
-      <img src="assets/projects-icon.png" alt="Projects" class="nav-icon">
-      <span>Projects</span>
-    </a>
-    <a href="#contact" class="nav-item">
-      <img src="assets/contact-icon.png" alt="Contact" class="nav-icon">
-      <span>Contact</span>
-    </a>
   </div>
 
   <footer class="footer">

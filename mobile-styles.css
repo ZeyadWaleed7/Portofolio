@@ -1,0 +1,147 @@
+/* Mobile-specific styles */
+.mobile-main-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For responsive images */
+.about-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  margin-left: 10px;
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  z-index: 999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mobile-menu.visible {
+  transform: translateY(0);
+  opacity: 1;
+  display: block;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-links li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.mobile-nav-links a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-links a:hover {
+  color: #ff5c17;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    order: 1;
+    margin-right: auto;
+  }
+  
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    order: 3;
+  }
+  
+  .talk-btn {
+    order: 2;
+    margin-right: 15px;
+  }
+  
+  .nav-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-main-pic-container {
+    max-width: 180px;
+  }
+  
+  .talk-btn {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-main-pic-container {
+    max-width: 150px;
+  }
+}

@@ -40,9 +40,25 @@ function switchCategory(event) {
     }
 }
 
+function toggleNavbar() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('visible');
+    mobileMenu.classList.toggle('hidden');
+    
+    // Toggle hamburger icon animation if needed
+    const hamburgerBtn = document.getElementById('hamburger-toggle');
+    hamburgerBtn.classList.toggle('active');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     updateCategoryText();
     window.addEventListener("resize", updateCategoryText);
+    
+    // Initialize hamburger menu functionality
+    const hamburgerToggle = document.getElementById('hamburger-toggle');
+    if (hamburgerToggle) {
+        hamburgerToggle.addEventListener('click', toggleNavbar);
+    }
 
     const categoryContainer = document.querySelector('.project-categories');
     if (categoryContainer) {
