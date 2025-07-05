@@ -32,6 +32,7 @@
   border-bottom: none;
   padding: 20px;
   position: relative;
+  min-width: 230px; /* Added min-width to ensure text fits on one line */
 }
 
 .details-container:first-child::after {
@@ -42,6 +43,17 @@
   height: 60%;
   width: 1px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Skills details styles */
+.skills-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -63,5 +75,11 @@
   
   .text-wrapper {
     align-items: center;
+  }
+  
+  .skills-details {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
   }
 }

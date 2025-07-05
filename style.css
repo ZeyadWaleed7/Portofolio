@@ -11,8 +11,11 @@ body {
   background-color: black;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
 p {
@@ -465,7 +468,6 @@ article p {
   background-color: black;
   border: 1px solid black;
   border-radius: 20px;
-  max-width: 800px;
   padding: 20px;
 }
 
@@ -494,7 +496,9 @@ article p {
   background-color: black;
   border: 1px solid black;
   border-radius: 20px;
-  height: 80vh;
+  height: auto;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .about-containers {
@@ -528,7 +532,7 @@ article p {
   flex-direction: row;
   justify-content: center;
   gap: 40px;
-  max-width: 800px;
+  max-width: 900px; /* Increased from 800px to provide more space */
   margin: 0 auto;
   padding: 20px;
 }
@@ -538,6 +542,7 @@ article p {
   border-bottom: none;
   padding: 20px;
   position: relative;
+  min-width: 410px; /* Added min-width to ensure text fits on one line */
 }
 
 .details-container:first-child::after {
@@ -565,10 +570,12 @@ article p {
 
 .projects-scroll-container {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: thin;
   scrollbar-color: #525252 black;
+  scroll-snap-type: x mandatory; /* Add scroll snapping */
 }
 
 .projects-scroll-container::-webkit-scrollbar {
@@ -658,7 +665,7 @@ article p {
 .main-pic-container {
   height: 450px;
   width: 450px;
-  display: flex;
+  display: block; /* Ensure it's visible on desktop */
   margin: auto 44px;
 }
 
@@ -809,6 +816,13 @@ footer p {
   text-align: left;
 }
 
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px; /* Ensure text has enough space */
+}
+
 @media (max-width: 480px) {
 
   .company-logo {
@@ -832,8 +846,8 @@ footer p {
   }
 
   .about-pic {
-    width: 150px;
-    height: 150px;
+    width: 240px;
+    height: 240px;
   }
 
   .btn {
@@ -844,10 +858,27 @@ footer p {
 .experience-scroll-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #525252 black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Add scroll snapping */
+}
+
+@media (max-width: 768px) {
+  .experience-scroll-container {
+    overflow-x: auto;
+    padding: 0;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .experience-scroll-container::-webkit-scrollbar {
@@ -868,13 +899,28 @@ footer p {
 }
 
 .experience-container {
-  display: flex;
-  gap: 30px;
+  gap: 16px;
+  display: inline-flex;
   padding: 20px 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: calc(100% - 80px);
   align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    overflow-x: auto;
+    padding: 20px 10px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snap scrolling for better experience */
+  }
+  
+  .experience-item {
+    scroll-snap-align: start; /* Snap to start of the item */
+  }
 }
 
 .title {
@@ -902,6 +948,12 @@ footer p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 768px) {
+  .scroll-arrow {
+    display: none; /* Hide scroll arrows on mobile */
+  }
+}
+
 .experience-item {
   text-align: center;
   padding: 1rem;
@@ -911,11 +963,12 @@ footer p {
 
 .exp-card {
   background: #0c0c0c;
-  width: 240px;
+  width: 300px;
   padding: 15px;
   border-radius: 15px;
   border: 2px solid #191919;
   transition: transform 0.3s ease, border-color 0.3s ease;
+  margin: 0 auto;
 }
 
 .exp-card:hover {
@@ -1056,12 +1109,7 @@ footer p {
     align-items: center;
     text-align: center;
   }
-
-  .about-pic {
-    width: 200px;
-    height: 200px;
-  }
-
+ 
   .section__pic-container {
     display: none;
   }
@@ -1075,6 +1123,11 @@ footer p {
 
   .details-container {
     width: 100%;
+  }
+  
+  .skills-details {
+    width: 100%;
+    text-align: left;
   }
 
   .experience {
@@ -1250,7 +1303,7 @@ ul {
   }
 
   .experience-item {
-    width: 320px;
+    width: 280px;
   }
 
   .experience-container {
@@ -1262,6 +1315,7 @@ ul {
   position: relative;
   width: 80%;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .fade-left,
@@ -1381,6 +1435,7 @@ ul {
 
   .projects-wrapper {
     width: 100%;
+    overflow-x: hidden;
   }
 
   .main-pic-container {
@@ -1583,6 +1638,8 @@ ul {
   .exp-card {
     width: 200px;
     padding: 12px;
+    flex-shrink: 0; /* Prevent cards from shrinking when scrolling */
+    margin: 0 8px; /* Add some margin between cards for better scrolling */
   }
   
   .company-logo {
@@ -1598,6 +1655,71 @@ ul {
   }
   
   .experience-container {
-    gap: 20px;
+    gap: 12px;
   }
+}
+
+.skills-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .skills-details {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.experience-wrapper {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.experience-fade-left,
+.experience-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.experience-fade-left {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.experience-fade-right {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
+}
+
+@media (max-width: 768px) {
+  .experience-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Prevent horizontal scrolling on the entire page */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Only allow horizontal scrolling in specific containers */
+.experience-scroll-container,
+.projects-scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }

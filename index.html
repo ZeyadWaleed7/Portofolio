@@ -61,6 +61,7 @@
   <div class="main-header">
     <div class="profile">
       <div class="main-profile-container">
+        <!-- Mobile-only image, will be hidden on desktop -->
         <div class="mobile-main-pic-container">
           <img src="assets/profile.png" alt="Profile picture" class="about-pic" />
         </div>
@@ -103,7 +104,9 @@
           </a>
           <div class="tooltip">LinkedIn</div>
         </li>
-      </ul>    </div>
+      </ul>    
+    </div>
+    <!-- Desktop-only image, will be hidden on mobile -->
     <div class="main-pic-container">
       <img src="assets/profile.png" alt="Profile picture" class="about-pic" />
     </div>
@@ -115,8 +118,8 @@
           <img src="assets/experience.png" alt="Experience icon" class="icon" />
         </div>
         <div class="text-wrapper">
-          <h3 class="experience-title">Experience</h3>
-          <p>3+ years <br />Frontend Development</p>
+          <h3 class="experience-title">Years of experience</h3>
+          <p>UX Design <br />& Front-End Development</p>
         </div>
       </div>
       <div class="details-container">
@@ -132,16 +135,17 @@
   </div>
   <div id="experience" class="experience">
     <h1 class="title">Experience</h1>
-    <div class="experience-scroll-container">
-      <button class="scroll-arrow left-arrow" onclick="scrollExperience(-1)">&#10094;</button>
-      <div class="experience-container">
-        <div class="experience-item exp-card">
-          <div class="article-container">
-            <img src="assets/gameball-logo.png" alt="Gameball Logo" class="company-logo">
+    <div class="experience-wrapper">
+      <div class="experience-fade-left"></div>
+      <div class="experience-scroll-container">
+        <div class="experience-container">
+          <div class="experience-item exp-card">
+            <div class="article-container">
+              <img src="assets/gameball-logo.png" alt="Gameball Logo" class="company-logo">
+            </div>
+            <p class="exp-title">Front-End Intern</p>
+            <p class="exp-description">Gameball - Cairo<br>2025-Present</p>
           </div>
-          <p class="exp-title">Front-End Intern</p>
-          <p class="exp-description">Gameball - Cairo<br>2025-Present</p>
-        </div>
         <div class="experience-item exp-card">
           <div class="article-container">
             <img src="assets/aman-logo.png" alt="Aman Logo" class="company-logo">
@@ -164,7 +168,8 @@
           <p class="exp-description">INNOVA - Cairo<br>2023-2024</p>
         </div>
       </div>
-      <button class="scroll-arrow right-arrow" onclick="scrollExperience(1)">&#10095;</button>
+      </div>
+      <div class="experience-fade-right"></div>
     </div>
   </div>
 
@@ -173,7 +178,7 @@
     <div class="experience-details-container">
       <div class="about-containers">
 
-        <div class="details-container">
+        <div class="skills-details">
           <div class="article-container">
 
             <div class="skill-article">
