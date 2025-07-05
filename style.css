@@ -859,7 +859,7 @@ footer p {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
+  overflow-x: visible; /* Make visible on desktop */
   white-space: nowrap;
   scrollbar-width: thin;
   scrollbar-color: #525252 black;
@@ -873,7 +873,7 @@ footer p {
 
 @media (max-width: 768px) {
   .experience-scroll-container {
-    overflow-x: auto;
+    overflow-x: auto; /* Enable horizontal scrolling on mobile */
     padding: 0;
     justify-content: flex-start;
     max-width: 100%;
@@ -902,7 +902,7 @@ footer p {
   gap: 16px;
   display: inline-flex;
   padding: 20px 10px;
-  overflow-x: hidden;
+  overflow-x: visible; /* Change to visible for desktop */
   scroll-behavior: smooth;
   align-items: center;
   justify-content: center;
@@ -911,7 +911,7 @@ footer p {
 
 @media (max-width: 768px) {
   .experience-container {
-    overflow-x: auto;
+    overflow-x: auto; /* Allow scrolling on mobile */
     padding: 20px 10px;
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
@@ -959,6 +959,7 @@ footer p {
   padding: 1rem;
   border-radius: 20px;
   flex-shrink: 0;
+  margin: 0 10px; /* Add margin between cards */
 }
 
 .exp-card {
@@ -1303,18 +1304,23 @@ ul {
   }
 
   .experience-item {
-    width: 280px;
+    width: 240px;
+    margin: 0px; /* Increase margins on desktop */
   }
 
   .experience-container {
     width: 100%;
+    overflow: visible; /* Ensure no cutoff on desktop */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on desktop */
+    justify-content: center;
   }
 }
 
 .projects-wrapper {
   position: relative;
   width: 80%;
-  overflow: hidden;
+  overflow: visible; /* Change to visible for desktop */
   max-width: 100%;
 }
 
@@ -1326,6 +1332,7 @@ ul {
   width: 100px;
   z-index: 1;
   pointer-events: none;
+  display: none; /* Hide on desktop by default */
 }
 
 .fade-left {
@@ -1336,6 +1343,13 @@ ul {
 .fade-right {
   right: 0;
   background: linear-gradient(to left, black, transparent);
+}
+
+@media (max-width: 768px) {
+  .fade-left,
+  .fade-right {
+    display: block; /* Show only on mobile */
+  }
 }
 
 @keyframes scroll {
@@ -1435,7 +1449,7 @@ ul {
 
   .projects-wrapper {
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Only hide overflow on mobile */
   }
 
   .main-pic-container {
@@ -1679,7 +1693,7 @@ ul {
 .experience-wrapper {
   position: relative;
   width: 80%;
-  overflow: hidden;
+  overflow: visible; /* Change to visible for desktop */
   max-width: 100%;
 }
 
@@ -1691,6 +1705,7 @@ ul {
   width: 100px;
   z-index: 1;
   pointer-events: none;
+  display: none; /* Hide on desktop by default */
 }
 
 .experience-fade-left {
@@ -1708,6 +1723,11 @@ ul {
     width: 100%;
     overflow-x: hidden;
   }
+  
+  .experience-fade-left,
+  .experience-fade-right {
+    display: block; /* Show only on mobile */
+  }
 }
 
 /* Prevent horizontal scrolling on the entire page */
@@ -1722,4 +1742,5 @@ html, body {
 .projects-scroll-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  max-width: 100%; /* Ensure no overflow beyond container */
 }
