@@ -686,6 +686,7 @@ article p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 22px;
+  margin: 0 auto;
 }
 
 .skills-article-container {
@@ -711,6 +712,7 @@ article {
   background-color: black;
   height: auto;
   border: 2px solid #191919;
+  min-width: 150px;
 }
 
 .warning-article {
@@ -974,7 +976,6 @@ footer p {
 
 .exp-card:hover {
   transform: translateY(-5px);
-  border-color: #ff5c17;
 }
 
 .company-logo {
@@ -1386,8 +1387,10 @@ ul {
     padding: 8px;
     border-radius: 10px;
     background-color: #0c0c0c;
-    height: 18px;
+    height: auto;
+    min-height: 18px;
     border: 2px solid #191919;
+    min-width: 120px; /* Smaller min-width on mobile */
   }
 
   .article-container {
