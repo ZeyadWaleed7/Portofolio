@@ -32,7 +32,8 @@
   border-bottom: none;
   padding: 20px;
   position: relative;
-  min-width: 230px; /* Added min-width to ensure text fits on one line */
+  min-width: 230px;
+  /* Added min-width to ensure text fits on one line */
 }
 
 .details-container:first-child::after {
@@ -61,22 +62,22 @@
     flex-direction: column;
     padding: 15px;
   }
-  
+
   .details-container {
     flex-direction: column;
     text-align: center;
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .details-container:first-child::after {
     display: none;
   }
-  
+
   .text-wrapper {
     align-items: center;
   }
-  
+
   .skills-details {
     flex-direction: column;
     text-align: center;

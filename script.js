@@ -25,9 +25,12 @@ function navigateToContact() {
 function scrollExperience(direction) {
     const container = document.querySelector('.experience-container');
     const scrollAmount = 260;
-    container.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
+    // Use requestAnimationFrame for smoother scrolling
+    requestAnimationFrame(() => {
+        container.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
     });
 }
 
@@ -44,7 +47,7 @@ function toggleNavbar() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu.classList.toggle('visible');
     mobileMenu.classList.toggle('hidden');
-    
+
     // Toggle hamburger icon animation if needed
     const hamburgerBtn = document.getElementById('hamburger-toggle');
     hamburgerBtn.classList.toggle('active');
@@ -53,7 +56,7 @@ function toggleNavbar() {
 document.addEventListener('DOMContentLoaded', function () {
     updateCategoryText();
     window.addEventListener("resize", updateCategoryText);
-    
+
     // Initialize hamburger menu functionality
     const hamburgerToggle = document.getElementById('hamburger-toggle');
     if (hamburgerToggle) {
@@ -70,18 +73,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     categoryButtons.forEach(button => {
         button.addEventListener('click', () => {
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+            // Use requestAnimationFrame for smoother transitions
+            requestAnimationFrame(() => {
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-            const category = button.getAttribute('data-category');
+                const category = button.getAttribute('data-category');
 
-            projects.forEach(project => {
-                if (category === 'all' || project.getAttribute('data-category') === category) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
+                projects.forEach(project => {
+                    if (category === 'all' || project.getAttribute('data-category') === category) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
             });
         });
     });
+
+    // Auto-scroll functionality removed - cards will scroll continuously
 });

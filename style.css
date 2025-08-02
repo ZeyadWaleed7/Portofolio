@@ -11,7 +11,8 @@ body {
   background-color: black;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   position: relative;
@@ -464,7 +465,7 @@ article p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px auto;
+  margin: 50px auto 0px auto;
   background-color: black;
   border: 1px solid black;
   border-radius: 20px;
@@ -532,7 +533,8 @@ article p {
   flex-direction: row;
   justify-content: center;
   gap: 40px;
-  max-width: 900px; /* Increased from 800px to provide more space */
+  max-width: 900px;
+  /* Increased from 800px to provide more space */
   margin: 0 auto;
   padding: 20px;
 }
@@ -542,7 +544,8 @@ article p {
   border-bottom: none;
   padding: 20px;
   position: relative;
-  min-width: 410px; /* Added min-width to ensure text fits on one line */
+  min-width: 410px;
+  /* Added min-width to ensure text fits on one line */
 }
 
 .details-container:first-child::after {
@@ -575,7 +578,11 @@ article p {
   white-space: nowrap;
   scrollbar-width: thin;
   scrollbar-color: #525252 black;
-  scroll-snap-type: x mandatory; /* Add scroll snapping */
+  /* Remove scroll snapping for better performance */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on iOS */
+  will-change: scroll-position;
+  /* Optimize for scrolling */
 }
 
 .projects-scroll-container::-webkit-scrollbar {
@@ -599,6 +606,10 @@ article p {
   display: inline-flex;
   gap: 20px;
   padding: 1rem;
+  flex-shrink: 0;
+  /* Prevent shrinking during scroll */
+  transform: translateZ(0);
+  /* Force hardware acceleration */
 }
 
 .project-img {
@@ -606,6 +617,10 @@ article p {
   width: 100%;
   height: auto;
   max-height: 50vh;
+  transform: translateZ(0);
+  /* Force hardware acceleration */
+  backface-visibility: hidden;
+  /* Optimize rendering */
 }
 
 .project-title {
@@ -648,7 +663,10 @@ article p {
   border-radius: 20px;
   border: 2px solid #191919;
   text-align: center;
-
+  transform: translateZ(0);
+  /* Force hardware acceleration */
+  backface-visibility: hidden;
+  /* Optimize rendering */
 }
 
 .section-container {
@@ -665,7 +683,8 @@ article p {
 .main-pic-container {
   height: 450px;
   width: 450px;
-  display: block; /* Ensure it's visible on desktop */
+  display: block;
+  /* Ensure it's visible on desktop */
   margin: auto 44px;
 }
 
@@ -822,7 +841,8 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 200px; /* Ensure text has enough space */
+  min-width: 200px;
+  /* Ensure text has enough space */
 }
 
 @media (max-width: 480px) {
@@ -861,7 +881,8 @@ footer p {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow-x: visible; /* Make visible on desktop */
+  overflow-x: visible;
+  /* Make visible on desktop */
   white-space: nowrap;
   scrollbar-width: thin;
   scrollbar-color: #525252 black;
@@ -869,13 +890,17 @@ footer p {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scroll-snap-type: x mandatory; /* Add scroll snapping */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on iOS */
+  /* Remove scroll snapping for better performance */
+  will-change: scroll-position;
+  /* Optimize for scrolling */
 }
 
 @media (max-width: 768px) {
   .experience-scroll-container {
-    overflow-x: auto; /* Enable horizontal scrolling on mobile */
+    overflow-x: auto;
+    /* Enable horizontal scrolling on mobile */
     padding: 0;
     justify-content: flex-start;
     max-width: 100%;
@@ -904,24 +929,30 @@ footer p {
   gap: 16px;
   display: inline-flex;
   padding: 20px 10px;
-  overflow-x: visible; /* Change to visible for desktop */
+  overflow-x: visible;
+  /* Change to visible for desktop */
   scroll-behavior: smooth;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap; /* Prevent items from wrapping */
+  flex-wrap: nowrap;
+  /* Prevent items from wrapping */
+  transform: translateZ(0);
+  /* Force hardware acceleration */
 }
 
 @media (max-width: 768px) {
   .experience-container {
-    overflow-x: auto; /* Allow scrolling on mobile */
+    overflow-x: auto;
+    /* Allow scrolling on mobile */
     padding: 20px 10px;
     justify-content: flex-start;
-    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-    scroll-snap-type: x mandatory; /* Snap scrolling for better experience */
+    -webkit-overflow-scrolling: touch;
+    /* For smooth scrolling on iOS */
+    /* Remove scroll snapping for better performance */
   }
-  
+
   .experience-item {
-    scroll-snap-align: start; /* Snap to start of the item */
+    /* Remove scroll snap alignment for better performance */
   }
 }
 
@@ -952,7 +983,8 @@ footer p {
 
 @media (max-width: 768px) {
   .scroll-arrow {
-    display: none; /* Hide scroll arrows on mobile */
+    display: none;
+    /* Hide scroll arrows on mobile */
   }
 }
 
@@ -961,7 +993,8 @@ footer p {
   padding: 1rem;
   border-radius: 20px;
   flex-shrink: 0;
-  margin: 0 10px; /* Add margin between cards */
+  margin: 0 10px;
+  /* Add margin between cards */
 }
 
 .exp-card {
@@ -972,6 +1005,10 @@ footer p {
   border: 2px solid #191919;
   transition: transform 0.3s ease, border-color 0.3s ease;
   margin: 0 auto;
+  transform: translateZ(0);
+  /* Force hardware acceleration */
+  backface-visibility: hidden;
+  /* Optimize rendering */
 }
 
 .exp-card:hover {
@@ -1111,7 +1148,7 @@ footer p {
     align-items: center;
     text-align: center;
   }
- 
+
   .section__pic-container {
     display: none;
   }
@@ -1126,7 +1163,7 @@ footer p {
   .details-container {
     width: 100%;
   }
-  
+
   .skills-details {
     width: 100%;
     text-align: left;
@@ -1306,14 +1343,17 @@ ul {
 
   .experience-item {
     width: 240px;
-    margin: 0px; /* Increase margins on desktop */
+    margin: 0px;
+    /* Increase margins on desktop */
   }
 
   .experience-container {
     width: 100%;
-    overflow: visible; /* Ensure no cutoff on desktop */
+    overflow: visible;
+    /* Ensure no cutoff on desktop */
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on desktop */
+    flex-wrap: wrap;
+    /* Allow wrapping on desktop */
     justify-content: center;
   }
 }
@@ -1321,8 +1361,11 @@ ul {
 .projects-wrapper {
   position: relative;
   width: 80%;
-  overflow: visible; /* Change to visible for desktop */
+  overflow: visible;
+  /* Change to visible for desktop */
   max-width: 100%;
+  transform: translateZ(0);
+  /* Force hardware acceleration */
 }
 
 .fade-left,
@@ -1330,10 +1373,11 @@ ul {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100px;
+  width: 150px;
   z-index: 1;
   pointer-events: none;
-  display: none; /* Hide on desktop by default */
+  display: block;
+  /* Show fade effects on all devices */
 }
 
 .fade-left {
@@ -1346,26 +1390,21 @@ ul {
   background: linear-gradient(to left, black, transparent);
 }
 
-@media (max-width: 768px) {
-  .fade-left,
-  .fade-right {
-    display: block; /* Show only on mobile */
-  }
-}
+/* Fade effects are now visible on all devices */
 
-@keyframes scroll {
+@keyframes scrollProjects {
   0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(calc(-100% - 20px));
+    transform: translateX(-50%);
   }
 }
 
 .projects-scroll-container {
   display: flex;
-  animation: scrollProjects 30s linear infinite;
+  /* Remove animation from container */
 }
 
 .project-container {
@@ -1373,6 +1412,8 @@ ul {
   gap: 20px;
   padding: 1rem;
   flex-shrink: 0;
+  animation: scrollProjects 60s linear infinite;
+  /* Slow auto-scroll animation for project cards only */
 }
 
 
@@ -1390,7 +1431,8 @@ ul {
     height: auto;
     min-height: 18px;
     border: 2px solid #191919;
-    min-width: 120px; /* Smaller min-width on mobile */
+    min-width: 120px;
+    /* Smaller min-width on mobile */
   }
 
   .article-container {
@@ -1452,7 +1494,8 @@ ul {
 
   .projects-wrapper {
     width: 100%;
-    overflow-x: hidden; /* Only hide overflow on mobile */
+    overflow-x: hidden;
+    /* Only hide overflow on mobile */
   }
 
   .main-pic-container {
@@ -1651,26 +1694,28 @@ ul {
   .footer {
     padding: 3rem 1.5rem 1.5rem;
   }
-  
+
   .exp-card {
     width: 200px;
     padding: 12px;
-    flex-shrink: 0; /* Prevent cards from shrinking when scrolling */
-    margin: 0 8px; /* Add some margin between cards for better scrolling */
+    flex-shrink: 0;
+    /* Prevent cards from shrinking when scrolling */
+    margin: 0 8px;
+    /* Add some margin between cards for better scrolling */
   }
-  
+
   .company-logo {
     width: 140px;
   }
-  
+
   .exp-title {
     font-size: 1rem;
   }
-  
+
   .exp-description {
     font-size: 0.85rem;
   }
-  
+
   .experience-container {
     gap: 12px;
   }
@@ -1696,7 +1741,8 @@ ul {
 .experience-wrapper {
   position: relative;
   width: 80%;
-  overflow: visible; /* Change to visible for desktop */
+  overflow: visible;
+  /* Change to visible for desktop */
   max-width: 100%;
 }
 
@@ -1708,7 +1754,8 @@ ul {
   width: 100px;
   z-index: 1;
   pointer-events: none;
-  display: none; /* Hide on desktop by default */
+  display: none;
+  /* Hide on desktop by default */
 }
 
 .experience-fade-left {
@@ -1726,18 +1773,22 @@ ul {
     width: 100%;
     overflow-x: hidden;
   }
-  
+
   .experience-fade-left,
   .experience-fade-right {
-    display: block; /* Show only on mobile */
+    display: block;
+    /* Show only on mobile */
   }
 }
 
 /* Prevent horizontal scrolling on the entire page */
-html, body {
+html,
+body {
   overflow-x: hidden;
   position: relative;
   width: 100%;
+  /* Optimize for scrolling performance */
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Only allow horizontal scrolling in specific containers */
@@ -1745,5 +1796,6 @@ html, body {
 .projects-scroll-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%; /* Ensure no overflow beyond container */
+  max-width: 100%;
+  /* Ensure no overflow beyond container */
 }

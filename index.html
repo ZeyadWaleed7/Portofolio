@@ -26,11 +26,13 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <link rel="stylesheet" href="mobile-styles.css" />
+  <link rel="stylesheet" href="additional-styles.css" />
 
   <title>Zeyad Waleed</title>
 </head>
 
-<body>  <nav class="navbar">
+<body>
+  <nav class="navbar">
     <div class="container">
       <div class="logo">
         <img src="assets/logo.png" alt="Logo" class="logo-img">
@@ -104,13 +106,13 @@
           </a>
           <div class="tooltip">LinkedIn</div>
         </li>
-      </ul>    
+      </ul>
     </div>
     <!-- Desktop-only image, will be hidden on mobile -->
     <div class="main-pic-container">
       <img src="assets/profile.png" alt="Profile picture" class="about-pic" />
     </div>
-  </div>  
+  </div>
   <div id="about" class="about">
     <div class="about-contain">
       <div class="details-container">
@@ -146,28 +148,28 @@
             <p class="exp-title">Front-End Intern</p>
             <p class="exp-description">Gameball - Cairo<br>2025-Present</p>
           </div>
-        <div class="experience-item exp-card">
-          <div class="article-container">
-            <img src="assets/aman-logo.png" alt="Aman Logo" class="company-logo">
+          <div class="experience-item exp-card">
+            <div class="article-container">
+              <img src="assets/aman-logo.png" alt="Aman Logo" class="company-logo">
+            </div>
+            <p class="exp-title">UX Designer Intern</p>
+            <p class="exp-description">AMAN Holding - Cairo<br>2024-2024</p>
           </div>
-          <p class="exp-title">UX Designer Intern</p>
-          <p class="exp-description">AMAN Holding - Cairo<br>2024-2024</p>
-        </div>
-        <div class="experience-item exp-card">
-          <div class="article-container">
-            <img src="assets/CIB-logo.png" alt="CIB Logo" class="company-logo">
+          <div class="experience-item exp-card">
+            <div class="article-container">
+              <img src="assets/CIB-logo.png" alt="CIB Logo" class="company-logo">
+            </div>
+            <p class="exp-title">Intern</p>
+            <p class="exp-description">CIB Bank - Cairo<br>2024-2024</p>
           </div>
-          <p class="exp-title">Intern</p>
-          <p class="exp-description">CIB Bank - Cairo<br>2024-2024</p>
-        </div>
-        <div class="experience-item exp-card">
-          <div class="article-container">
-            <img src="assets/INNOVA-logo.png" alt="INNOVA Logo" class="company-logo">
+          <div class="experience-item exp-card">
+            <div class="article-container">
+              <img src="assets/INNOVA-logo.png" alt="INNOVA Logo" class="company-logo">
+            </div>
+            <p class="exp-title">UX Team lead</p>
+            <p class="exp-description">INNOVA - Cairo<br>2023-2024</p>
           </div>
-          <p class="exp-title">UX Team lead</p>
-          <p class="exp-description">INNOVA - Cairo<br>2023-2024</p>
         </div>
-      </div>
       </div>
       <div class="experience-fade-right"></div>
     </div>
@@ -269,73 +271,73 @@
                 <p class="skill-text ">Product Management</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text ">UX Research</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Creative Direction</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">UI / UX Design</p>
               </div>
             </div>
-              
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Design Systems</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">User Research</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Information Design</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Design Standards</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Front-End Development</p>
               </div>
             </div>
-         
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">AngularJS</p>
               </div>
             </div>
-              
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Python</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Java</p>
               </div>
             </div>
-            
+
             <div class="skill-article">
               <div>
                 <p class="skill-text">Tkinter (Python GUI library)</p>
@@ -361,7 +363,12 @@
         <div class="project-container">
           <div class="projects-container color-container" data-category="web">
             <div class="article-container">
-              <img src="assets/project-1.png" alt="Project 1" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/project-1.webp" type="image/webp">
+                <source srcset="assets/optimized/project-1.jpg" type="image/jpeg">
+                <img src="assets/optimized/project-1-optimized.png" alt="Project 1" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Zalabat mart</p>
             <p class="description">Zalabat mart is a web application that allows users to order food from different
@@ -376,10 +383,16 @@
 
           <div class="projects-container color-container" data-category="web">
             <div class="article-container">
-              <img src="assets/project-2.png" alt="Project 2" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/project-2.webp" type="image/webp">
+                <source srcset="assets/optimized/project-2.jpg" type="image/jpeg">
+                <img src="assets/optimized/project-2-optimized.png" alt="Project 2" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <h2 class="project-title">Dish Drop</h2>
-            <p class="description">Dish Drop is a web application that allows users to order Egyptian fast food from local restaurants</p>
+            <p class="description">Dish Drop is a web application that allows users to order Egyptian fast food from
+              local restaurants</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/ZeyadWaleed7/Dish-Drop'">
@@ -390,10 +403,16 @@
 
           <div class="projects-container color-container" data-category="web">
             <div class="article-container">
-              <img src="assets/project-3.png" alt="Project 3" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/project-3.webp" type="image/webp">
+                <source srcset="assets/optimized/project-3.jpg" type="image/jpeg">
+                <img src="assets/optimized/project-3-optimized.png" alt="Project 3" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <h2 class="project-title">Sportofolio Web App</h2>
-            <p class="description">Sportofolio is a web platform for athletes to showcase their sports portfolios, connect with others.</p>
+            <p class="description">Sportofolio is a web platform for athletes to showcase their sports portfolios,
+              connect with others.</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/ZeyadWaleed7/sportofolio-app'">
@@ -404,10 +423,16 @@
 
           <div class="projects-container color-container" data-category="web">
             <div class="article-container">
-              <img src="assets/project-4.png" alt="Project 4" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/project-4.webp" type="image/webp">
+                <source srcset="assets/optimized/project-4.jpg" type="image/jpeg">
+                <img src="assets/optimized/project-4-optimized.png" alt="Project 4" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Drone navigation</p>
-            <p class="description">Drone Navigation is a Python-based simulation for an AI course to compare pathfinding algorithms.</p>
+            <p class="description">Drone Navigation is a Python-based simulation for an AI course to compare pathfinding
+              algorithms.</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/ZeyadWaleed7/Autonomous-Drone-Navigation-for-Search-and-Rescue'">
@@ -418,14 +443,19 @@
 
           <div class="projects-container color-container" data-category="web">
             <div class="article-container">
-              <img src="assets/project-5.png" alt="Project 5" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/project-5.webp" type="image/webp">
+                <source srcset="assets/optimized/project-5.jpg" type="image/jpeg">
+                <img src="assets/optimized/project-5-optimized.png" alt="Project 5" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Telda budget</p>
             <p class="description">Telda budget is a simple budget tracker web app that helps users manage their
               finances</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ZeyadWaleed7/Supermarket-management-system'">
+                onclick="location.href='https://github.com/ZeyadWaleed7/Budget-Tracker-app'">
                 Github
               </button>
             </div>
@@ -433,13 +463,18 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-2.png" alt="Rozen Verse" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-2.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-2.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-2-optimized.png" alt="Rozen Verse" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Rozen Verse</p>
-            <p class="description">Rozen Verse is a UI/UX design project focused on creating an engaging user experience.</p>
+            <p class="description">Rozen Verse is a UI/UX design project focused on creating an engaging user
+              experience.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -447,13 +482,18 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-1.png" alt="Innova Dashboard" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-1.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-1.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-1-optimized.png" alt="Innova Dashboard" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Innova Dashboard</p>
-            <p class="description">Innova Dashboard is a comprehensive UI/UX design for a modern dashboard interface.</p>
+            <p class="description">Innova Dashboard is a comprehensive UI/UX design for a modern dashboard interface.
+            </p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -461,13 +501,18 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-5.png" alt="Aman Super App" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-5.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-5.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-5-optimized.png" alt="Aman Super App" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Aman Super App</p>
-            <p class="description">Aman Super App is a mobile application design focused on user-centered design principles.</p>
+            <p class="description">Aman Super App is a mobile application design focused on user-centered design
+              principles.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -475,13 +520,18 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-4.png" alt="Sportofolio" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-4.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-4.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-4-optimized.png" alt="Sportofolio" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Sportofolio</p>
-            <p class="description">Sportofolio is a UI/UX design project for athletes to showcase their sports portfolios.</p>
+            <p class="description">Sportofolio is a UI/UX design project for athletes to showcase their sports
+              portfolios.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -489,13 +539,17 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-6.png" alt="Little Limon" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-6.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-6.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-6-optimized.png" alt="Little Limon" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Little Limon</p>
             <p class="description">Little Limon is a creative UI/UX design project with a focus on user experience.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -503,13 +557,18 @@
 
           <div class="projects-container color-container" data-category="ui-ux">
             <div class="article-container">
-              <img src="assets/ui-3.png" alt="Slash" class="project-img" />
+              <picture>
+                <source srcset="assets/optimized/ui-3.webp" type="image/webp">
+                <source srcset="assets/optimized/ui-3.jpg" type="image/jpeg">
+                <img src="assets/optimized/ui-3-optimized.png" alt="Slash" class="project-img" loading="lazy"
+                  decoding="async" />
+              </picture>
             </div>
             <p class="project-title">Slash</p>
-            <p class="description">Slash is a modern UI/UX design project emphasizing clean and intuitive interface design.</p>
+            <p class="description">Slash is a modern UI/UX design project emphasizing clean and intuitive interface
+              design.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='#'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
                 View Design
               </button>
             </div>
@@ -570,6 +629,8 @@
 
   <!-- Defer non-critical JavaScript -->
   <script src="script.js" defer></script>
+  <script src="image-loader.js" defer></script>
+  <script src="performance-monitor.js" defer></script>
 </body>
 
 </html>
